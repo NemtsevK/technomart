@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% set currentPage = 'catalog' %}
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -16,62 +17,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
-<header class="header">
-  <div class="header__top">
-    <div class="container header__top-inner">
-      <a class="logo" href="index.html">
-        <img class="logo__image logo__image--header" src="images/brand/logo.svg" width="108" height="18" alt="Логотип Техномарт">
-      </a>
-      <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
-        <input class="search-form__input" name="main-search" id="main-search" type="search" placeholder="Поиск:" aria-label="Поиск">
-        <div class="search-form__icon"></div>
-      </form>
-      <a class="header__top-button header__top-button-bookmark" href="blank.html">Закладки: <span>0</span></a>
-      <a class="header__top-button header__top-button-cart header__top-button-cart--fill" href="blank.html">Корзина: <span>10</span></a>
-      <a class="goods__button-buy button-buy" href="blank.html">Оформить заказ</a>
-    </div>
-  </div>
-  <div class="header__bottom container">
-    <p class="header__description">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
-    <div class="header__contacts">
-      <a class="header__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-      <a class="header__address header-extra-link" href="blank.html">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
-    </div>
-    <div class="header__sign signed">
-      <div class="user-box">
-        <p class="header-username">Зубенко Михаил</p>
-        <a class="logout-button" href="blank.html" aria-label="Выход"></a>
-      </div>
-      <a class="header-extra-link" href="blank.html">Мои заказы</a>
-      <a class="header-extra-link sign-zone-link" href="blank.html">Личный кабинет</a>
-    </div>
-    <nav class="header__nav nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__item-link" href="#">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__item-link" href="blank.html">Компания</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__item-link" href="catalog.html">Каталог</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__item-link" href="blank.html">Новости</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__item-link" href="blank.html">Спецпредложения</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__item-link" href="blank.html">Доставка</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__item-link" href="blank.html">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+{% include 'templates/_header.html' %}
 <main>
   <div class="page-catalog container">
     <h1 class="visually-hidden">Техномарт: каталог</h1>
@@ -289,77 +235,7 @@
     </div>
   </article>
 </main>
-<footer class="footer">
-  <div class="footer__nav">
-    <div class="footer__nav-inner container">
-      <a class="logo logo--footer" href="#">
-        <img class="logo__image logo__image--footer" src="images/brand/logo.svg" width="108" height="18" alt="Логотип Техномарт">
-      </a>
-      <div class="footer__contacts">
-        <a class="footer__contacts-link" href="blank.html">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
-        <a class="footer__contacts-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
-      </div>
-      <ul class="footer__nav-list">
-        <li class="footer__nav-item">
-          <a class="footer__nav-link" href="blank.html">Компания</a>
-        </li>
-        <li class="footer__nav-item">
-          <a class="footer__nav-link" href="blank.html">Новости</a>
-        </li>
-        <li class="footer__nav-item">
-          <a class="footer__nav-link" href="catalog.html">Каталог</a>
-        </li>
-        <li class="footer__nav-item">
-          <a class="footer__nav-link" href="blank.html">Доставка</a>
-        </li>
-        <li class="footer__nav-item">
-          <a class="footer__nav-link" href="blank.html">Контакты</a>
-        </li>
-        <li class="footer__nav-item">
-          <a class="footer__nav-link footer__nav-link--second" href="blank.html">Материалы</a>
-        </li>
-        <li class="footer__nav-item">
-          <a class="footer__nav-link footer__nav-link--second" href="blank.html">Техника</a>
-        </li>
-        <li class="footer__nav-item">
-          <a class="footer__nav-link footer__nav-link--second" href="blank.html">Инструмент</a>
-        </li>
-        <li class="footer__nav-item">
-          <a class="footer__nav-link footer__nav-link--second" href="blank.html">Спецпредложения</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer__link-bar">
-    <div class="footer__link-bar-inner container">
-      <p class="footer__copyright">&copy; 2010–2024 Компания &#171;Техномарт&#187; Все права защищены</p>
-      <ul class="footer__social social">
-        <li class="social__item">
-          <a class="social__item-link social__item-link--vk" href="#" title="Наша группа ВКонтакте" aria-label="Наша группа ВКонтакте"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__item-link social__item-link--youtube" href="#" title="Наш канал в YouTube" aria-label="Наш канал в YouTube"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__item-link social__item-link--telegram" href="#" title="Наш канал в Телеграм" aria-label="Наш канал в Телеграм"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__item-link social__item-link--github" href="https://github.com/nemtsev-k/device/" title="Исходный код в GitHub" aria-label="Исходный код в GitHub" target="_blank" rel="nofollow noopener"></a>
-        </li>
-      </ul>
-      <div class="footer__info">
-        <div class="footer__feedback">
-          <span class="footer__info-text">Обратная связь:</span>
-          <a class="footer__info-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="footer__developer">
-          <span class="footer__info-text">Разработано &#8212;</span>
-          <a class="footer__info-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+{% include 'templates/_footer.html' %}
 <div class="modal modal-cart">
   <p>Товар добавлен в корзину!</p>
   <div class="modal-button-container">
@@ -368,6 +244,6 @@
   </div>
   <button class="modal-close-button" type="button" aria-label="Закрыть окно"></button>
 </div>
-<!--<script src="js/main.js"></script>-->
+<script src="js/main.js"></script>
 </body>
 </html>

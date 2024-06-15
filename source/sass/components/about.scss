@@ -1,0 +1,42 @@
+.about {
+  width: 480px;
+}
+
+.about__title {
+  margin-bottom: 0;
+}
+
+.about__text {
+  margin-bottom: 0;
+  margin-top: 26px;
+  font-size: 13px;
+}
+
+.about__delivery-list {
+  font-size: 18px;
+  list-style: none;
+  margin: -3px 0 0;
+  padding: 0;
+  line-height: 36px;
+}
+
+.about__delivery-item {
+  padding-left: 36px;
+  position: relative;
+}
+
+.about__delivery-item::before {
+  content: "";
+  position: absolute;
+  background-color: var(--emphasis);
+  width: 25px;
+  height: 2px;
+  left: 0;
+  top: 17px;
+}
+
+.about__button {
+  margin-top: 13px;
+  padding-left: 40px;
+  padding-right: 40px;
+}

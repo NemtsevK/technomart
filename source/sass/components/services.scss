@@ -1,0 +1,167 @@
+.services {
+  padding-top: 68px;
+}
+
+.services__text {
+  width: 400px;
+  margin-bottom: 71px;
+}
+
+.services p,
+.catalog-article p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.services,
+.catalog-article {
+  background-color: var(--light-background);
+}
+
+.tabs {
+  padding-top: 71px;
+  padding-bottom: 94px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-gap: 0 80px;
+}
+
+.tabs::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/decorative/services-background.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 279px;
+  top: 21px;
+  left: 230px;
+}
+
+.tabs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.tabs-information {
+  display: none;
+  width: 315px;
+  line-height: 25px;
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 5;
+}
+
+.tabs-information h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: var(--dark-background);
+  letter-spacing: -1px;
+  margin: 0 0 31px;
+  position: relative;
+  z-index: 1;
+}
+
+.tabs-information p {
+  position: relative;
+  z-index: 1;
+}
+
+.tabs-information::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 89px;
+  right: 1px;
+  z-index: 0;
+}
+
+.box-delivery::after {
+  background-image: url("../images/icons/delivery.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 468px;
+  height: 261px;
+}
+
+.box-warranty h3 {
+  margin-bottom: 26px;
+}
+
+.box-warranty::after {
+  background-image: url("../images/icons/guarantee.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 389px;
+  height: 283px;
+  top: 66px;
+  right: -8px;
+}
+
+.box-credit h3 {
+  margin-bottom: 30px;
+}
+
+.box-credit p {
+  margin-bottom: 27px;
+}
+
+.box-credit .button {
+  padding: 6px 43px 7px 46px;
+  border-radius: 3px;
+}
+
+.box-credit::after {
+  background-image: url("../images/icons/credit.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 465px;
+  height: 285px;
+  top: 67px;
+  right: -10px;
+}
+
+.tabs__button {
+  background-color: var(--dark-background);
+  color: var(--basic-type-contrast);
+  font-weight: bold;
+  font-size: 21px;
+  font-family: inherit;
+  border-style: none;
+  width: 240px;
+  min-height: 63px;
+  text-transform: none;
+  padding-top: 17px;
+  padding-left: 22px;
+  padding-bottom: 22px;
+  text-align: left;
+  grid-column: 1 / 2;
+  cursor: pointer;
+}
+
+.tabs__button:hover,
+.tabs__button:focus {
+  background-color: var(--dark-background-extra);
+}
+
+.tabs__button--current {
+  background-color: var(--clear-background);
+  color: var(--dark-background-extra);
+}
+
+.tabs__button--current:hover,
+.tabs__button--current:focus {
+  color: var(--transparent-extra-type);
+  background-color: var(--clear-background);
+}
+
+.tabs-box-current {
+  display: block;
+}

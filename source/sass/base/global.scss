@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clear-background: #FFF;
+  --light-background: #F1F5F7;
+  --dark-background: #32425C;
+  --dark-background-extra: #293449;
+  --dark-background-push: #161D29;
+  --dark-background-extra-push: #1D2739;
+  --header-light-background: #F2F6F8;
+  --heading-background: #F9F5F0;
+  --catalog-background: #F7F3EC;
+  --button-container-background: #F4F4F4;
+  --button-border: #E5E5E5;
+  --light-border: #EAEAEA;
+  --basic-type: #000;
+  --basic-type-contrast: #FFF;
+  --footer-type: #FFD180;
+  --light-type: #C5C5C5;
+  --emphasis: #EE3643;
+  --emphasis-hover: #CA2C37;
+  --emphasis-active: #BA2732;
+  --deal: #63A63E;
+  --deal-shadow: #367315;
+  --deal-hover: #5FBB2D;
+  --transparent-type: hsla(0, 0%, 100%, 0.5);
+  --transparent-extra-type: hsla(0, 0%, 0%, 0.4);
+  --basic-icon: #C5C5C5;
+  --transparent-icon: hsla(0, 0%, 100%, 0.3);
+  --transparent-button: hsla(0, 0%, 100%, 0.3);
+  --transparent-button-hover: hsla(0, 0%, 77%, 0.3);
+  --transparent-button-active: hsla(0, 0%, 66%, 0.3);
+  --transparent-shadow: hsla(0, 0%, 0%, 0.15);
+  --special-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-lillac: #DC91D8;
+  --special-green: #8ED78F;
+  --special-yellowlight: #FFC047;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}

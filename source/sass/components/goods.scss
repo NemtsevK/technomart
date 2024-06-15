@@ -1,0 +1,186 @@
+.goods {
+  padding-bottom: 70px;
+}
+
+.goods__header {
+  background-color: var(--heading-background);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 28px;
+  padding-right: 14px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.goods__title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--dark-background);
+  margin-top: 30px;
+  margin-bottom: 29px;
+}
+
+.goods__list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px 20px;
+  margin-bottom: 48px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+}
+
+.goods__list--full {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px 20px;
+  margin: 0;
+}
+
+.goods__item {
+  font-weight: bold;
+  width: 220px;
+  min-height: 318px;
+  border: 1px solid var(--light-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.goods__item:hover .goods__area-buttons,
+.goods__item:focus .goods__area-buttons,
+.goods__item:focus-within .goods__area-buttons {
+  display: block;
+}
+
+.goods__item:hover,
+.goods__item:focus,
+.goods__item:focus-within {
+  box-shadow: 0 4px 20px var(--transparent-shadow);
+}
+
+.goods__item--new {
+  position: relative;
+}
+
+.goods__item--new a,
+.goods__item--new button {
+  position: relative;
+  z-index: 1;
+}
+
+.goods__item--new::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/decorative/new-flag-caps.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  right: 0;
+  top: 0;
+}
+
+.goods__image {
+  width: 184px;
+  height: 166px;
+  -o-object-fit: none;
+  object-fit: none;
+}
+
+.goods__name {
+  font-size: 19px;
+  margin: 11px 30px 4px;
+  text-align: center;
+  letter-spacing: -.036rem;
+  line-height: 21px;
+  flex-grow: 1;
+}
+
+.goods__past-price {
+  font-size: 17px;
+  margin: 0;
+  color: var(--light-type);
+  text-decoration: line-through;
+}
+
+.goods__actual-price {
+  background-color: var(--emphasis);
+  color: var(--basic-type-contrast);
+  position: relative;
+  left: -4px;
+  height: 38px;
+  width: 122px;
+  margin: 10px 0 20px;
+  padding-left: 11px;
+  border-radius: 3px 0 0 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goods__actual-price::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 19px solid transparent;
+  border-left: 19px solid var(--emphasis);
+  right: -38px;
+}
+
+.goods__area-buttons {
+  display: none;
+  background-color: var(--clear-background);
+  position: absolute;
+  margin-left: -1px;
+  padding: 37px 40px 40px 39px;
+}
+
+.goods__area-buttons button {
+  position: relative;
+  display: block;
+  width: 135px;
+  border-radius: 2px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.goods__button-buy {
+  margin-bottom: 10px;
+  padding: 12px;
+}
+
+.goods__button-buy::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.goods__button-bookmark {
+  color: var(--dark-background);
+  background-color: transparent;
+  text-transform: uppercase;
+  border-color: var(--deal);
+  border-style: solid;
+  border-width: 3px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+}
+
+.goods__button-bookmark:hover,
+.goods__button-bookmark:focus {
+  border-color: var(--dark-background);
+}
+
+.goods__button-bookmark:active {
+  opacity: 0.5;
+}

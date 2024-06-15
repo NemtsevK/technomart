@@ -1,0 +1,103 @@
+.slider {
+  position: relative;
+  grid-row: 2 / -1;
+  grid-column: 1 / -2;
+  background-color: #2d231e;
+  background-image: url("../images/decorative/slider-drill.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider__item {
+  display: none;
+  padding-top: 25px;
+  padding-left: 24px;
+  padding-right: 300px;
+  min-height: 266px;
+}
+
+.slider__item--current {
+  display: block;
+}
+
+.slider__title {
+  text-transform: uppercase;
+  color: var(--basic-type-contrast);
+  font-size: 36px;
+  line-height: 32px;
+  margin: 0 0 8px;
+}
+
+.slider__item-text {
+  color: var(--basic-type-contrast);
+  margin: 0 0 12px;
+}
+
+.slider__button {
+  position: absolute;
+  bottom: 27px;
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 31px;
+  justify-content: center;
+  left: 216px;
+  right: 206px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.slider__radio {
+  padding: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--basic-type-contrast);
+  border: 2px solid var(--basic-type-contrast);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__radio--current {
+  background-color: var(--emphasis);
+}
+
+.slider__arrows {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  bottom: calc(50% - 50px);
+}
+
+.slider__arrow {
+  height: 40px;
+  width: 22px;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  box-sizing: content-box;
+  padding: 20px;
+}
+
+.slider__arrow--backward {
+  background-image: url("../images/icons/left.svg");
+}
+
+.slider__arrow--forward {
+  background-image: url("../images/icons/right.svg");
+}

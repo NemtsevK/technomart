@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 192px;
+  text-align: center;
+  margin-top: -1px;
+  padding: 8px 24px 6px;
+  text-transform: uppercase;
+  color: var(--basic-type-contrast);
+  background-color: var(--emphasis);
+  font-size: 14px;
+  border-style: none;
+  font-family: inherit;
+}
+
+.button:hover {
+  background-color: var(--emphasis-hover);
+}
+
+.button:active {
+  background-color: var(--emphasis-active);
+}

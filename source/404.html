@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Техномарт. Страница не найдена</title>
+  {% include 'templates/_head.html' %}
+</head>
+<body class="page__body">
+{% include 'templates/_header.html' %}
+<div class="container">
+  <h1 class="visually-hidden">Техномарт</h1>
+  <section class="not-found">
+    <img class="not-found__image" src="images/icons/404.svg" alt="Ошибка 404">
+    <h2 class="not-found__title title-h2">Страница не найдена</h2>
+  </section>
+</div>
+{% include 'templates/_footer.html' %}
+</body>
+</html>
