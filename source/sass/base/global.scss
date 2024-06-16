@@ -5,45 +5,41 @@
 }
 
 :root {
-  --clear-background: #FFF;
-  --light-background: #F1F5F7;
-  --dark-background: #32425C;
+  --clear-background: #fff;
+  --light-background: #f1f5f7;
+  --dark-background: #32425c;
   --dark-background-extra: #293449;
-  --dark-background-push: #161D29;
-  --dark-background-extra-push: #1D2739;
-  --header-light-background: #F2F6F8;
-  --heading-background: #F9F5F0;
-  --catalog-background: #F7F3EC;
-  --button-container-background: #F4F4F4;
-  --button-border: #E5E5E5;
-  --light-border: #EAEAEA;
+  --dark-background-push: #161d29;
+  --dark-background-extra-push: #1d2739;
+  --header-light-background: #f2f6f8;
+  --heading-background: #f9f5f0;
+  --catalog-background: #f7f3ec;
+  --button-container-background: #f4f4f4;
+  --button-border: #e5e5e5;
+  --light-border: #eaeaea;
   --basic-type: #000;
-  --basic-type-contrast: #FFF;
-  --footer-type: #FFD180;
-  --light-type: #C5C5C5;
-  --emphasis: #EE3643;
-  --emphasis-hover: #CA2C37;
-  --emphasis-active: #BA2732;
-  --deal: #63A63E;
+  --basic-type-contrast: #fff;
+  --footer-type: #ffd180;
+  --light-type: #c5c5c5;
+  --emphasis: #ee3643;
+  --emphasis-hover: #ca2c37;
+  --emphasis-active: #ba2732;
+  --deal: #63a63e;
   --deal-shadow: #367315;
-  --deal-hover: #5FBB2D;
+  --deal-hover: #5fbb2d;
   --transparent-type: hsla(0, 0%, 100%, 0.5);
   --transparent-extra-type: hsla(0, 0%, 0%, 0.4);
-  --basic-icon: #C5C5C5;
+  --basic-icon: #c5c5c5;
   --transparent-icon: hsla(0, 0%, 100%, 0.3);
   --transparent-button: hsla(0, 0%, 100%, 0.3);
   --transparent-button-hover: hsla(0, 0%, 77%, 0.3);
   --transparent-button-active: hsla(0, 0%, 66%, 0.3);
   --transparent-shadow: hsla(0, 0%, 0%, 0.15);
-  --special-yellow: #FFBF47;
-  --special-blue: #3BBCE3;
-  --special-lillac: #DC91D8;
-  --special-green: #8ED78F;
-  --special-yellowlight: #FFC047;
-}
-
-a {
-  text-decoration: none;
+  --special-yellow: #ffbf47;
+  --special-blue: #3bbce3;
+  --special-lillac: #dc91d8;
+  --special-green: #8ed78f;
+  --special-yellowlight: #ffc047;
 }
 
 img {

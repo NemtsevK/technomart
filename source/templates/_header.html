@@ -8,30 +8,38 @@
         <input class="search-form__input" name="main-search" id="main-search" type="search" placeholder="Поиск:" aria-label="Поиск">
         <div class="search-form__icon"></div>
       </form>
-      <a class="header__top-button header__top-button-bookmark" href="blank.html">Закладки: <span>0</span></a>
-      <a class="header__top-button header__top-button-cart" href="blank.html">Корзина: <span>0</span></a>
-      <a class="header__button-buy button-buy" href="blank.html">Оформить заказ</a>
+      <a class="header__top-button header__button-bookmark" href="#">Закладки: <span>0</span></a>
+      <a class="header__top-button header__button-cart {% if currentPage == 'catalog' %}header__button-cart--fill{% endif %}" href="#">
+        Корзина: <span>{% if currentPage == 'catalog' %}10{% else %}0{% endif %}</span>
+      </a>
+      <a class="header__button-buy button-buy button-buy--header" href="#">Оформить заказ</a>
     </div>
   </div>
   <div class="header__bottom container">
-    <p class="header__description">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
+    <p class="header__description">Интернет-магазин строительных материалов и&nbsp;nинструментов для ремонта</p>
     <div class="header__contacts">
       <a class="header__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-      <a class="header__address header-extra-link" href="blank.html">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
+      <a class="header__address" href="#">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
     </div>
     {% if currentPage == 'catalog' %}
-    <div class="header__sign signed">
-      <div class="user-box">
-        <p class="header-username">Зубенко Михаил</p>
-        <a class="logout-button" href="blank.html" aria-label="Выход"></a>
+    <div class="user-menu user-menu--full">
+      <div class="user-menu__inner">
+        <span class="user-menu__name">Зубенко Михаил</span>
+        <a class="user-menu__logout" href="#" title="Выход" aria-label="Выход"></a>
       </div>
-      <a class="header-extra-link" href="blank.html">Мои заказы</a>
-      <a class="header-extra-link sign-zone-link" href="blank.html">Личный кабинет</a>
+      <ul class="user-menu__list">
+        <li class="user-menu__item">
+          <a class="user-menu__item-link" href="#">Мои заказы</a>
+        </li>
+        <li class="user-menu__item">
+          <a class="user-menu__item-link" href="#">Личный кабинет</a>
+        </li>
+      </ul>
     </div>
     {% else %}
-    <div class="header__sign">
-      <a class="header__sign-button header__sign-button--authorization" href="blank.html">Войти</a>
-      <a class="header__sign-button header__sign-button--registration" href="blank.html">Регистрация</a>
+    <div class="user-menu">
+      <a class="user-menu__button user-menu__button--authorization" href="#">Войти</a>
+      <a class="user-menu__button user-menu__button--registration" href="#">Регистрация</a>
     </div>
     {% endif %}
     <nav class="header__nav nav">

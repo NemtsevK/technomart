@@ -1,5 +1,5 @@
 .special {
-  padding-bottom: 59px;
+  padding: 59px 0;
 }
 
 .special__list {
@@ -13,22 +13,24 @@
 }
 
 .special__link {
-  color: var(--basic-type-contrast);
-  font-size: 24px;
-  display: flex;
   position: relative;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 24px 142px 21px 22px;
   min-height: 123px;
   height: 100%;
-  font-weight: bold;
-  padding: 24px 142px 21px 22px;
+  color: var(--basic-type-contrast);
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+  }
 }
 
-.special__link::after {
-  content: "";
-  position: absolute;
-}
 
 .special__link:hover .special__button,
 .special__link:focus .special__button {
@@ -43,79 +45,104 @@
   display: block;
 }
 
-.special__item--material {
-  background-color: var(--special-yellow);
-}
+.special__item {
 
-.special__item--material .special__link::after {
-  background-image: url("../images/icons/icon-1.svg");
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 44px;
-  height: 65px;
-  top: calc(50% - 31px);
-  right: 43px;
-}
+  &--new {
+    position: relative;
 
-.special__item--tools {
-  background-color: var(--special-blue);
-}
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../images/decorative/new-flag-caps.svg");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 70px;
+      height: 70px;
+      right: 0;
+      top: 0;
+    }
+  }
 
-.special__item--tools .special__link::after {
-  background-image: url("../images/icons/icon-2.svg");
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 75px;
-  height: 61px;
-  top: calc(50% - 28px);
-  right: 31px;
-}
+  &--material {
+    background-color: var(--special-yellow);
 
-.special__item--equipment {
-  background-color: var(--special-lillac);
-}
+    .special__link::after {
+      background-image: url("../images/icons/icon-1.svg");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 44px;
+      height: 65px;
+      top: 50%;
+      right: 43px;
+      transform: translateY(-50%);
+    }
+  }
 
-.special__item--equipment .special__link::after {
-  background-image: url("../images/icons/icon-3.svg");
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 78px;
-  height: 62px;
-  top: calc(50% - 31px);
-  right: 31px;
-}
+  &--tools {
+    background-color: var(--special-blue);
 
-.special__item--discount {
-  background-color: var(--special-green);
-}
+    .special__link::after {
+      top: 50%;
+      right: 31px;
+      background-image: url("../images/icons/icon-2.svg");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 75px;
+      height: 61px;
+      transform: translateY(-50%);
+    }
+  }
 
-.special__item--discount .special__link::after {
-  background-image: url("../images/icons/icon-4.svg");
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 59px;
-  height: 72px;
-  top: calc(50% - 36px);
-  right: 45px;
-}
+  &--equipment {
+    background-color: var(--special-lillac);
 
-.special__item--delivery {
-  background-color: var(--special-yellowlight);
-}
+    .special__link::after {
+      top: 50%;
+      right: 31px;
+      background-image: url("../images/icons/icon-3.svg");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 78px;
+      height: 62px;
+      transform: translateY(-50%);
+    }
+  }
 
-.special__item--delivery .special__link::after {
-  background-image: url("../images/icons/icon-5.svg");
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 78px;
-  height: 63px;
-  top: calc(50% - 30px);
-  right: 31px;
+  &--discount {
+    background-color: var(--special-green);
+
+    .special__link::after {
+      background-image: url("../images/icons/icon-4.svg");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 59px;
+      height: 72px;
+      top: 50%;
+      right: 45px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &--delivery {
+    background-color: var(--special-yellowlight);
+
+    .special__link::after {
+      background-image: url("../images/icons/icon-5.svg");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 78px;
+      height: 63px;
+      top: 50%;
+      right: 31px;
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .special__button {
