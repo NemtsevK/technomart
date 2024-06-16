@@ -95,7 +95,10 @@ const createStack = () => {
 };
 
 const copyFiles = (done) => {
-  src(PATHS_TO_FILES, { base: SOURCE_ROOT })
+  src(PATHS_TO_FILES, {
+    base: SOURCE_ROOT,
+    encoding: false,
+  })
     .pipe(dest(BUILD_ROOT));
   done();
 };
