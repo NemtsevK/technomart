@@ -6,15 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Техномарт. Каталог</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple.png">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/cuprum-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/cuprum-italic.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/cuprum-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/pt-sans-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/pt-sans-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link href="css/style.min.css" rel="stylesheet">
+<link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/favicons/apple.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preload" href="fonts/cuprum-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="fonts/cuprum-italic.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="fonts/cuprum-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="fonts/pt-sans-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="fonts/pt-sans-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.min.css">
+
 </head>
 <body class="page__body">
 <header class="header">
@@ -27,25 +28,33 @@
         <input class="search-form__input" name="main-search" id="main-search" type="search" placeholder="Поиск:" aria-label="Поиск">
         <div class="search-form__icon"></div>
       </form>
-      <a class="header__top-button header__top-button-bookmark" href="blank.html">Закладки: <span>0</span></a>
-      <a class="header__top-button header__top-button-cart" href="blank.html">Корзина: <span>0</span></a>
-      <a class="header__button-buy button-buy" href="blank.html">Оформить заказ</a>
+      <a class="header__top-button header__button-bookmark" href="#">Закладки: <span>0</span></a>
+      <a class="header__top-button header__button-cart header__button-cart--fill" href="#">
+        Корзина: <span>10</span>
+      </a>
+      <a class="header__button-buy button-buy button-buy--header" href="#">Оформить заказ</a>
     </div>
   </div>
   <div class="header__bottom container">
-    <p class="header__description">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
+    <p class="header__description">Интернет-магазин строительных материалов и&nbsp;nинструментов для ремонта</p>
     <div class="header__contacts">
       <a class="header__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-      <a class="header__address header-extra-link" href="blank.html">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
+      <a class="header__address" href="#">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
     </div>
     
-    <div class="header__sign signed">
-      <div class="user-box">
-        <p class="header-username">Зубенко Михаил</p>
-        <a class="logout-button" href="blank.html" aria-label="Выход"></a>
+    <div class="user-menu user-menu--full">
+      <div class="user-menu__inner">
+        <span class="user-menu__name">Зубенко Михаил</span>
+        <a class="user-menu__logout" href="#" title="Выход" aria-label="Выход"></a>
       </div>
-      <a class="header-extra-link" href="blank.html">Мои заказы</a>
-      <a class="header-extra-link sign-zone-link" href="blank.html">Личный кабинет</a>
+      <ul class="user-menu__list">
+        <li class="user-menu__item">
+          <a class="user-menu__item-link" href="#">Мои заказы</a>
+        </li>
+        <li class="user-menu__item">
+          <a class="user-menu__item-link" href="#">Личный кабинет</a>
+        </li>
+      </ul>
     </div>
     
     <nav class="header__nav nav">
@@ -76,14 +85,14 @@
   </div>
 </header>
 
-<main>
+<main class="main main--second">
   <div class="page-catalog container">
     <h1 class="visually-hidden">Техномарт: каталог</h1>
     <div class="breadcrumbs">
       <a class="path-home" href="blank.html" aria-label="Главная"></a>
       <a class="path-link" href="blank.html">Каталог</a>
       <a class="path-link" href="blank.html">Инструмент</a>
-      <a class="path-link" href="#">Перфораторы</a>
+      <span class="path-link">Перфораторы</span>
     </div>
     <div class="heading-catalog">
       <h2>Перфораторы</h2>
