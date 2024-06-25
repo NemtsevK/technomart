@@ -3,6 +3,7 @@
   "author": "Nemtsev Konstantin <nemtsevk@hotmail.com> (https://github.com/nemtsev-k)",
   "description": "Личный проект «Техномарт»",
   "homepage": "https://nemtsev-k.github.io/technomart/",
+  "repository": "https://github.com/nemtsev-k/technomart",
   "private": true,
   "type": "module",
   "devDependencies": {
@@ -15,7 +16,7 @@
     "gulp-imagemin": "^9.1.0",
     "gulp-nunjucks": "^6.0.0",
     "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^9.0.1",
+    "gulp-postcss": "^10.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-replace": "^1.1.4",
     "gulp-stacksvg": "^3.0.0",
@@ -25,11 +26,12 @@
     "postcss": "^8.4.38",
     "postcss-csso": "^6.0.1",
     "stylelint": "^16.5.0",
-    "stylelint-config-htmlacademy": "^4.2.1"
+    "stylelint-config-htmlacademy": "^4.2.1",
+    "stylelint-scss": "^6.3.2"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp buildProd",
     "start": "gulp runDev",
@@ -46,12 +48,13 @@
   "editorconfig-cli": [
     "*.json",
     "*.js",
-    "source/*.html",
+    "source/**/*.html",
     "source/js/**/*.js",
     "source/images/**/*.svg",
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "^20.14.0"
+    "node": "^20.14.0",
+    "npm": "^10.7.0"
   }
 }
