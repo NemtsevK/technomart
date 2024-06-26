@@ -51,9 +51,8 @@
   display: none;
   width: 315px;
   line-height: 25px;
-  grid-row-start: 1;
+  grid-row-start: 1 / 5;
   grid-column-start: 2;
-  grid-row-end: 5;
 }
 
 .tabs-information h3 {

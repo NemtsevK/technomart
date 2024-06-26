@@ -37,14 +37,6 @@
   font-family: inherit;
 }
 
-.search-form__input::-webkit-input-placeholder {
-  color: var(--basic-type-contrast);
-}
-
-.search-form__input::-moz-placeholder {
-  color: var(--basic-type-contrast);
-}
-
 .search-form__input::placeholder {
   color: var(--basic-type-contrast);
 }

@@ -5,7 +5,7 @@
 }
 
 :root {
-  --clear-background: #fff;
+  --clear-background: #ffffff;
   --light-background: #f1f5f7;
   --dark-background: #32425c;
   --dark-background-extra: #293449;
@@ -17,8 +17,8 @@
   --button-container-background: #f4f4f4;
   --button-border: #e5e5e5;
   --light-border: #eaeaea;
-  --basic-type: #000;
-  --basic-type-contrast: #fff;
+  --basic-type: #000000;
+  --basic-type-contrast: #ffffff;
   --footer-type: #ffd180;
   --light-type: #c5c5c5;
   --emphasis: #ee3643;
@@ -27,14 +27,14 @@
   --deal: #63a63e;
   --deal-shadow: #367315;
   --deal-hover: #5fbb2d;
-  --transparent-type: hsla(0, 0%, 100%, 0.5);
-  --transparent-extra-type: hsla(0, 0%, 0%, 0.4);
+  --transparent-type: hsla(0, 0%, 100%, 50%);
+  --transparent-extra-type: hsla(0, 0%, 0%, 40%);
   --basic-icon: #c5c5c5;
-  --transparent-icon: hsla(0, 0%, 100%, 0.3);
-  --transparent-button: hsla(0, 0%, 100%, 0.3);
-  --transparent-button-hover: hsla(0, 0%, 77%, 0.3);
-  --transparent-button-active: hsla(0, 0%, 66%, 0.3);
-  --transparent-shadow: hsla(0, 0%, 0%, 0.15);
+  --transparent-icon: hsla(0, 0%, 100%, 30%);
+  --transparent-button: hsla(0, 0%, 100%, 30%);
+  --transparent-button-hover: hsla(0, 0%, 77%, 30%);
+  --transparent-button-active: hsla(0, 0%, 66%, 30%);
+  --transparent-shadow: hsla(0, 0%, 0%, 15%);
   --special-yellow: #ffbf47;
   --special-blue: #3bbce3;
   --special-lillac: #dc91d8;
