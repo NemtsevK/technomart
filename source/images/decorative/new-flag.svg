@@ -1,87 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="60"
-   height="59"
-   viewBox="0 0 15.875 15.610417"
-   version="1.1"
-   id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2024-01-14)"
-   sodipodi:docname="new-flag.svg">
-  <defs
-     id="defs2" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="8"
-     inkscape:cx="30.113483"
-     inkscape:cy="50.934753"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:window-width="1834"
-     inkscape:window-height="1057"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     units="px" />
-  <metadata
-     id="metadata5">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-281.38957)">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.8985405px;line-height:4.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.12246352"
-       x="108.82086"
-       y="-9.1547976"
-       id="text4533"
-       transform="matrix(0.72090114,0.69357638,-0.72090114,0.69357638,0,0)"><tspan
-         sodipodi:role="line"
-         id="tspan4531"
-         x="108.82086"
-         y="2.6621001"
-         style="fill:#ffffff;fill-opacity:1;stroke-width:0.12246352" /></text>
-    <path
-       style="fill:#ee3643;fill-opacity:1;stroke:none;stroke-width:0.19842048px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 8.6577704e-4,281.38783 H 10.324683 l 5.551183,5.55119 v 10.06405 z"
-       id="path4529"
-       inkscape:connector-curvature="0" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.44305229px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.1986376"
-       x="248.46432"
-       y="163.89354"
-       id="text4537"
-       transform="matrix(0.58926983,0.58926983,-0.84850773,0.84850773,0,0)"><tspan
-         sodipodi:role="line"
-         id="tspan4535"
-         x="248.46432"
-         y="163.89354"
-         style="fill:#ffffff;fill-opacity:1;stroke-width:0.1986376">new</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 59" style="enable-background:new 0 0 60 59;">
+  <style type="text/css">
+    .st0{fill:#EE3643;}
+    .st1{fill:#FFFFFF;}
+  </style>
+  <path class="st0" d="M0,0h39l21,21v38L0,0z"/>
+  <g>
+    <path class="st1" d="M28.3,16l5.7-5.7l0.6,0.6l-0.8,0.8c0.9-0.3,1.7-0.2,2.2,0.3c0.2,0.2,0.4,0.5,0.5,0.8c0.1,0.3,0.1,0.6,0,0.9		c-0.1,0.3-0.3,0.6-0.5,0.9c-0.2,0.2-0.5,0.5-0.9,1l-3.5,3.5l-0.7-0.7l3.5-3.5c0.4-0.4,0.7-0.7,0.8-1c0.1-0.2,0.2-0.5,0.2-0.7		c0-0.3-0.1-0.5-0.3-0.6c-0.3-0.3-0.7-0.4-1.1-0.3c-0.5,0.1-1.1,0.4-1.8,1.2l-3.1,3.1L28.3,16z"/>
+    <path class="st1" d="M37.1,21.1l0.6,0.8c-0.7,0.5-1.4,0.7-2,0.8c-0.6,0-1.2-0.2-1.6-0.7c-0.6-0.6-0.8-1.3-0.6-2.2		c0.2-0.9,0.7-1.7,1.7-2.7c1-1,1.9-1.5,2.8-1.7c0.9-0.2,1.6,0,2.1,0.5c0.5,0.5,0.7,1.2,0.5,2.1c-0.2,0.9-0.7,1.8-1.7,2.7		c-0.1,0.1-0.1,0.1-0.3,0.3l-3-3c-0.6,0.7-1,1.3-1.1,1.8c-0.1,0.6,0,1,0.3,1.3c0.2,0.2,0.6,0.4,0.9,0.4		C36.2,21.6,36.6,21.4,37.1,21.1z M36.5,17.3l2.2,2.2c0.5-0.5,0.7-1,0.8-1.3c0.2-0.6,0.1-1.1-0.3-1.4c-0.3-0.3-0.7-0.4-1.2-0.3		C37.5,16.6,37,16.8,36.5,17.3z"/>
+    <path class="st1" d="M37.5,25.2l4.5-6.9l0.7,0.7l-2.7,3.9l-1,1.5c0.1-0.1,0.5-0.4,1.4-1l4-2.7l0.7,0.7l-2.7,3.9l-0.9,1.3l1.3-0.9		l4-2.6l0.7,0.7l-7,4.5l-0.7-0.7l2.8-4.1l0.8-1.1l-5.2,3.6L37.5,25.2z"/>
   </g>
 </svg>
