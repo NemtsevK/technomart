@@ -1,6 +1,10 @@
 {
   "extends": [
-    "stylelint-scss",
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
     "stylelint-config-htmlacademy"
-  ]
+  ],
+  "rules": {
+    "no-unknown-custom-properties": null
+  }
 }
