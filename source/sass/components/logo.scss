@@ -7,6 +7,7 @@
   display: flex;
   padding: 12px 50px;
   justify-content: center;
+  align-items: center;
 }
 
 .logo:active {
@@ -25,5 +26,6 @@
 
 .logo__image--footer {
   width: 138px;
+  height: 28px;
   padding-bottom: 5px;
 }
