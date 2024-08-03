@@ -1,9 +1,9 @@
 {
   "name": "technomart",
-  "author": "Nemtsev Konstantin <nemtsevk@hotmail.com> (https://github.com/nemtsev-k)",
+  "author": "Nemtsev Konstantin <nemtsevk@hotmail.com> (https://github.com/NemtsevK)",
   "description": "Личный проект «Техномарт»",
-  "homepage": "https://nemtsev-k.github.io/technomart/",
-  "repository": "https://github.com/nemtsev-k/technomart",
+  "homepage": "https://nemtsevk.github.io/technomart/",
+  "repository": "https://github.com/NemtsevK/technomart/",
   "private": true,
   "type": "module",
   "devDependencies": {
@@ -56,7 +56,7 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "^20.14.0",
-    "npm": "^10.7.0"
+    "node": "^20.15.1",
+    "npm": "^10.8.2"
   }
 }
